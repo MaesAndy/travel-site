@@ -313,6 +313,7 @@ template {
   padding-right: 18px;
   max-width: 1236px;
   margin: 0 auto;
+
 }
 .wrapper--medium{
     max-width: 976px;
@@ -330,17 +331,43 @@ template {
         margin-bottom: 3.825rem
     }
   }
+.wrapper--no-padding-until-large{
+    padding-left: 0px;
+    padding-right: 0px;
+
+  }
+@media (min-width: 1010px){
+.wrapper--no-padding-until-large{
+      padding-left: 18px;
+      padding-right: 18px
+
+  }
+  }
 .page-section{
   padding: 1.2rem 0;
+
 }
 @media (min-width: 800px){
 .page-section{
   padding: 4.5rem 0
+
 }
   }
 .page-section--blue{
     background-color: #2f5572;
     color: white;
+  }
+.page-section--testimonials{
+  background: #e0e6ef;
+  padding-bottom: 0;
+}
+@media (min-width: 1010px){
+.page-section--testimonials{
+    background:url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 4.5rem 0
+}
   }
 .headline{
   font-weight:300;
@@ -396,6 +423,9 @@ template {
     clear:both;
     display:table;
   }
+.row--t-padding{
+    padding-top: 80px;
+  }
 .row--gutters {
     margin-right: -65px;
 
@@ -410,10 +440,25 @@ template {
     padding-right: 100px;
 
   }
+.row--gutters-small{
+    margin-right: -45px;
+  }
+.row--gutters-small > div {
+    padding-right: 45px;
+  }
 .row__b-margin-until-medium{
     margin-bottom: 1rem;
   }
 @media (min-width: 800px){
+.row{
+  /*Begin EQUUAL HEIHGT RULES */
+
+
+
+
+
+
+}
     .row__b-margin-until-medium{
       margin-bottom: 0;
     }
@@ -426,9 +471,6 @@ template {
         width: 37%;
 
       }
-
-
-
 
       .row__medium-8{
         float:left;
@@ -443,6 +485,28 @@ template {
     float: left;
     width: 50%;
   }
+
+  .row__medium-4{
+    float: left;
+    width: 33.33%;
+  }
+  }
+@media (min-width: 1010px){
+  .row__large-4{
+    float: left;
+    width: 33.33%;
+  }
+
+  .row--equal-height-at-large{
+    display:flex;
+
+  }
+
+    .row--equal-height-at-large > div{
+      float:none;
+      display: flex;
+
+    }
   }
 .generic-contant-container p{
     line-height: 1.65;
@@ -486,12 +550,17 @@ text-align:center;
   }
 @media (min-width: 530px){
 .section-title__icon{
+      position:relative;
+      top:8px;
       display: inline-block;
       margin-right: .5rem;
       margin-bottom: 0
 
 
   }
+  }
+.section-title--blue{
+    color: #2f5572;
   }
 .feature-item{
   position:relative;
@@ -533,6 +602,52 @@ text-align:center;
       font-size: 1.875rem;
       margin-top: 1em
   }
+  }
+.testimonial{
+  background-color: rgba(255, 255, 255, .8);
+  padding: 0 16px 1px 16px;
+  margin-bottom: 98px;
+
+
+
+}
+@media (min-width: 1010px){
+.testimonial{
+    padding: 0 1.825rem  1px 1.825rem;
+    margin-bottom: 0
+
+
+
+}
+  }
+.testimonial__photo{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto -80px auto;
+    position:relative;
+    top: -80px;
+    border: 6px solid rgba(255, 255, 255, .8);
+  }
+.testimonial__title{
+    color: #2f5572;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+
+  }
+.testimonial__subtitle{
+    color: #d59541;
+    text-align:center;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    margin: .25rem 0 1rem 0;
+
+  }
+.testimonial--last{
+    margin-bottom: 0px;
   }
 .large-hero{
   position:relative;
