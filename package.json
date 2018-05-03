@@ -1,13 +1,21 @@
 {
   "name": "travel-site",
   "version": "1.0.0",
+  "scripts": {
+    "webpack": "webpack",
+    "watch": "gulp watch"
+  },
   "dependencies": {
     "gulp-live-server": "0.0.31",
     "jquery": "^3.3.1",
-    "normalize.css": "^8.0.0"
+    "normalize.css": "^8.0.0",
+    "webpack": "^3.8.1"
   },
   "devDependencies": {
     "autoprefixer": "^8.3.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
     "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
     "gulp-postcss": "^7.0.1",
