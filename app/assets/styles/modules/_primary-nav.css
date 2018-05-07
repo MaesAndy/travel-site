@@ -38,7 +38,7 @@
     display:block;
     padding: 5px 8px;
     font-size: .8rem;
-    background-color: $mainBlue;
+    background-color: $mainOrange;
 
 
     @mixin atMedium{

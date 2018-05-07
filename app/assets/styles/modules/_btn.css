@@ -9,12 +9,12 @@
   display:inline-block;
 
     &--orange{
-      background-color: $mainOrange;
+      background-color: #9b5046;
 
     }
 
     &--large{
-      
+
       padding: 1.1rem  1.9rem;
 
       @mixin atSmall{

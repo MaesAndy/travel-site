@@ -1,0 +1,13 @@
+body{
+  padding: 0;
+  position:relative;
+
+  @mixin atMedium{
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+
+  }
+}

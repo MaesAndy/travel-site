@@ -5,6 +5,14 @@
   padding-right: 18px;
   max-width: 1236px;
   margin: 0 auto;
+  &--banner{
+    max-width:600px;
+    background-color: rgba(47, 85, 114, .5);
+    border-radius: 5px;
+  }
+  &--header{
+    
+  }
 
   &--medium{
     max-width: 976px;

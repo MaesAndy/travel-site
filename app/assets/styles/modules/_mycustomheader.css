@@ -1,0 +1,4 @@
+.mycustomerheader{
+  border:solid red 2px;
+  @mixin clearfix;
+}
