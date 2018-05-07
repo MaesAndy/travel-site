@@ -81,7 +81,7 @@
     width: 33.33%;
   }
 
-  &--equal-height-at-large{
+   &--equal-height-at-large{
     display:flex;
 
     & > div{

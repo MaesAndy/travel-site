@@ -31,6 +31,7 @@ createWaypoints(){
 }
 
 
+
 }
 
 export default RevealOnScroll;
