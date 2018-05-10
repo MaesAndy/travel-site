@@ -1,3 +1,6 @@
+
+
+
 .site-header{
   position: absolute;
   z-index: 2;
@@ -23,7 +26,7 @@
 
   @mixin atMedium{
     background-color: rgba(47, 85, 114, .3);
-    width: 96.3vw;
+
     position: fixed;
 
     &--dark{

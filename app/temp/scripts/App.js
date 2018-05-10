@@ -11220,7 +11220,11 @@ var _StickyHeader = __webpack_require__(5);
 
 var _StickyHeader2 = _interopRequireDefault(_StickyHeader);
 
-var _Modal = __webpack_require__(7);
+var _fixed = __webpack_require__(7);
+
+var _fixed2 = _interopRequireDefault(_fixed);
+
+var _Modal = __webpack_require__(8);
 
 var _Modal2 = _interopRequireDefault(_Modal);
 
@@ -11822,6 +11826,32 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 /***/ }),
 /* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function adjustWidth() {
+  var parentwidth = (0, _jquery2.default)(".outer-wrapper").width();
+  (0, _jquery2.default)(".site-header").width(parentwidth);
+}
+
+(0, _jquery2.default)(window).resize(function () {
+  adjustWidth();
+});
+
+(0, _jquery2.default)(document).ready(function () {
+  adjustWidth();
+});
+
+/***/ }),
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
